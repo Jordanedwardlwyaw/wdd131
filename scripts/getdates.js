@@ -1,2 +1,3 @@
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+
+document.getElementById("currentyear").textContent = "2025";
+document.getElementById("lastModified").textContent = "Last Updated: July 1, 2025";

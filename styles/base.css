@@ -17,39 +17,50 @@ header {
   padding: 1rem;
 }
 
-#course-title {
+course-title {
   display: block;
+  text-align: center;
   font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 nav {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  background-color: #003366;
+  padding: 1rem;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  transition: color 0.3s;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 
 nav a:hover {
-  color: #00bcd4;
+  background-color: #ffffff;
+  color: #003366;
 }
-
 main {
   max-width: 960px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  padding: 2rem;
+  margin: 2rem auto;
+  padding: 1rem;
 }
 
 .card {
-  border: 1px solid #ccc;
   padding: 1rem;
-  background: #f9f9f9;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
