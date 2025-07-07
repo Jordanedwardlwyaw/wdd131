@@ -1,0 +1,22 @@
+@media only screen and (min-width: 600px) {
+  nav ul {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    gap: 1.5rem;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+
+  main {
+    max-width: 900px;
+  }
+}
