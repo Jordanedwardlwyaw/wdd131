@@ -3,23 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A photo album of beautiful temples around the world." />
   <title>Temple Album</title>
-
-
   <link rel="stylesheet" href="styles/temples.css" />
-  
   <link rel="stylesheet" href="styles/temples-large.css" />
   <script defer src="scripts/temples.js"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
   <header>
     <h1>Temple Album</h1>
     <nav>
-      <button id="hamburger" aria-label="Toggle menu">☰</button>
+      <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
       <ul id="nav-menu">
         <li><a href="#">Home</a></li>
         <li><a href="#">Old</a></li>
@@ -29,30 +27,33 @@
       </ul>
     </nav>
   </header>
-
-  <main>
-    <h1>Home</h1>
+  <main id="main">
+    <h2>Home</h2>
     <section class="gallery">
-      
       <figure>
-        <img src="images/temple1.jpg" alt="Temple 1" />
-        <figcaption>Salt lake city,utah</figcaption>
+        <img src="images/temple1.jpg" alt="Salt Lake Temple exterior" />
+        <figcaption>Salt Lake City, Utah</figcaption>
       </figure>
       <figure>
-        <img src="images/temple2.webp" alt="Temple 2" />
-        <figcaption>Salt lake city,utah</figcaption>
+        <img src="images/temple2.webp" alt="Temple with mountains in background" />
+        <figcaption>Salt Lake City, Utah</figcaption>
       </figure>
-    
       <figure>
-        <img src="images/temple-placeholder.jpg" alt="Temple 3" />
-        <figcaption>Salt lake city,utah</figcaption>
+        <img src="images/temple3.jpg" alt="Temple at sunrise" />
+        <figcaption>Accra, Ghana</figcaption>
       </figure>
-      
+      <figure>
+        <img src="images/temple4.jpg" alt="White temple in garden" />
+        <figcaption>Johannesburg, South Africa</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple5.jpg" alt="Modern temple with large spires" />
+        <figcaption>Rome, Italy</figcaption>
+      </figure>
     </section>
   </main>
-
   <footer>
-    <p>&copy; <span id="year"></span>🌴 Jordan Edward🌴 </p>
+    <p>&copy; <span id="year"></span> 🌴 Jordan Edward 🌴</p>
     <p>Last modified: <span id="lastModified"></span></p>
   </footer>
 </body>
