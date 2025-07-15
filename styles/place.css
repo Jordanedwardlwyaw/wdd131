@@ -1,0 +1,141 @@
+:root {
+  --clr-red: #d91e36;
+  --clr-green: #0a8a42;
+  --clr-white: #ffffff;
+  --clr-shadow: rgba(0, 0, 0, 0.25);
+  --gap: 1rem;
+  --radius: 0.5rem;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #eaffef; /* light mint */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  background: var(--clr-red);
+  color: var(--clr-white);
+}
+
+.hero picture img {
+  width: 100%;
+  height: 55vh;
+  object-fit: cover;
+  display: block;
+}
+
+/* On wider screens, make it even taller */
+@media (min-width: 700px) {
+  .hero picture img {
+    height: 80vh; /* big, cinematic hero image on desktop */
+  }
+}
+
+
+
+.hero h1 {
+  font-size: 3rem; /* Bigger, bolder title */
+}
+@media (min-width: 700px) {
+  .hero h1 {
+    font-size: 4rem; /* Even bigger on wide view */
+  }
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  gap: var(--gap);
+  padding: var(--gap);
+  transform: translateY(-4rem);
+}
+
+.card {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: 0 0 10px var(--clr-shadow);
+}
+
+.card h2 {
+  background: var(--clr-green);
+  color: var(--clr-white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius) var(--radius) 0 0;
+  margin: -1.25rem -1.25rem 1rem -1.25rem;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+/* Weather icon (mobile SVG and desktop pseudo-icon) */
+.wx-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+@media (min-width: 700px) {
+  .wx-icon {
+    display: none;
+  }
+
+  #weatherHeading::after {
+    content: " ⛅";
+    margin-left: 0.5rem;
+  }
+}
+
+/* Layout for wider view */
+@media (min-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin-inline: auto;
+  }
+
+  .data {
+    justify-self: start;
+  }
+
+  .weather {
+    justify-self: end;
+  }
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  background: var(--clr-red);
+  color: var(--clr-white);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Example labels */
+.demo-label {
+  text-align: center;
+  font-size: 0.85rem;
+  margin: 0.5rem auto 2rem;
+  color: #444;
+}
+
+@media (min-width: 700px) {
+  .demo-label.mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 699px) {
+  .demo-label.wide {
+    display: none;
+  }
+}
