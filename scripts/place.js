@@ -1,5 +1,4 @@
 function calculateWindChill(t, v) {
-  // Wind chill formula for Celsius
   return (
     13.12 +
     0.6215 * t -
@@ -9,11 +8,9 @@ function calculateWindChill(t, v) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Footer values
   document.getElementById("year").textContent = new Date().getFullYear();
   document.getElementById("lastModified").textContent = document.lastModified;
 
-  // Wind chill calculation
   const temp = parseFloat(document.getElementById("temp").textContent);
   const wind = parseFloat(document.getElementById("wind").textContent);
   const windChillSpan = document.getElementById("windChill");

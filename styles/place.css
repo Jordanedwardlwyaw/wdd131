@@ -11,7 +11,7 @@
 
 body {
   margin: 0;
-  background: #eaffef; /* light mint */
+  background: #eaffef; 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -31,25 +31,23 @@ body {
   display: block;
 }
 
-/* On wider screens, make it even taller */
 @media (min-width: 700px) {
   .hero picture img {
-    height: 80vh; /* big, cinematic hero image on desktop */
+    height: 80vh; 
   }
 }
 
 
 
 .hero h1 {
-  font-size: 3rem; /* Bigger, bolder title */
+  font-size: 3rem; 
 }
 @media (min-width: 700px) {
   .hero h1 {
-    font-size: 4rem; /* Even bigger on wide view */
+    font-size: 4rem; 
   }
 }
 
-/* Cards */
 .cards {
   display: grid;
   gap: var(--gap);
@@ -74,7 +72,6 @@ body {
   position: relative;
 }
 
-/* Weather icon (mobile SVG and desktop pseudo-icon) */
 .wx-icon {
   width: 48px;
   height: 48px;
@@ -93,7 +90,6 @@ body {
   }
 }
 
-/* Layout for wider view */
 @media (min-width: 700px) {
   .cards {
     grid-template-columns: 1fr 1fr;
@@ -110,7 +106,6 @@ body {
   }
 }
 
-/* Footer */
 footer {
   margin-top: auto;
   background: var(--clr-red);
@@ -120,7 +115,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Example labels */
 .demo-label {
   text-align: center;
   font-size: 0.85rem;
