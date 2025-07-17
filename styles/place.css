@@ -22,6 +22,8 @@ body {
   text-align: center;
   background: var(--clr-red);
   color: var(--clr-white);
+  padding-left: var(--gap);
+  padding-right: var(--gap);
 }
 
 .hero picture img {
@@ -37,11 +39,11 @@ body {
   }
 }
 
-
-
 .hero h1 {
   font-size: 3rem; 
+  margin-bottom: 1rem;
 }
+
 @media (min-width: 700px) {
   .hero h1 {
     font-size: 4rem; 
@@ -50,9 +52,17 @@ body {
 
 .cards {
   display: grid;
-  gap: var(--gap);
+  gap: var(--gap) var(--gap);
   padding: var(--gap);
   transform: translateY(-4rem);
+}
+
+@media (min-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin-inline: auto;
+  }
 }
 
 .card {
@@ -60,6 +70,9 @@ body {
   border-radius: var(--radius);
   padding: 1.25rem;
   box-shadow: 0 0 10px var(--clr-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card h2 {
@@ -70,6 +83,18 @@ body {
   margin: -1.25rem -1.25rem 1rem -1.25rem;
   font-size: 1.25rem;
   position: relative;
+}
+
+.card ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .wx-icon {
@@ -91,12 +116,6 @@ body {
 }
 
 @media (min-width: 700px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-    max-width: 1000px;
-    margin-inline: auto;
-  }
-
   .data {
     justify-self: start;
   }
@@ -112,6 +131,8 @@ footer {
   color: var(--clr-white);
   text-align: center;
   padding: 1rem 0;
+  padding-left: var(--gap);
+  padding-right: var(--gap);
   font-size: 0.9rem;
 }
 
