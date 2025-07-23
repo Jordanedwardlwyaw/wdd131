@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #005f73;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  flex-direction: column;
+  background: #0a9396;
+  position: absolute;
+  top: 3.5rem;
+  right: 1rem;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+#nav-menu.open {
+  display: flex;
+}
+
+nav li {
+  margin: 0.5rem 1rem;
+}
+
+nav a {
+  display: block;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+  background-color: #007f8c;
+  color: #ffcc00;
+  transition: 0.3s ease;
+}
+
+#hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.temple-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.temple-card:hover {
+  transform: scale(1.02);
+}
+
+.temple-card h3 {
+  margin: 0.5rem 0;
+  font-family: 'Merriweather', serif;
+  color: #005f73;
+}
+
+.temple-card p {
+  margin: 0.25rem 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
+/* Accessibility skip link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  width: auto;
+  height: auto;
+  background: #ffcc00;
+  color: black;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+footer {
+  background: #005f73;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

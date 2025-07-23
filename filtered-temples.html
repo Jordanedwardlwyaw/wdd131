@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A dynamically filtered album of beautiful temples around the world." />
+  <title>Filtered Temple Album</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <link rel="stylesheet" href="styles/filtered-temples-large.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Merriweather&display=swap" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script defer src="scripts/filtered-temples.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>Filtered Temple Album</h1>
+    <nav>
+      <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul id="nav-menu">
+        <li><a href="#" onclick="filterTemples('home')">Home</a></li>
+        <li><a href="#" onclick="filterTemples('old')">Old</a></li>
+        <li><a href="#" onclick="filterTemples('new')">New</a></li>
+        <li><a href="#" onclick="filterTemples('large')">Large</a></li>
+        <li><a href="#" onclick="filterTemples('small')">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h2>Temple Gallery</h2>
+
+    <!-- Container where temple cards will be injected -->
+    <div id="temple-cards" class="gallery temple-grid"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> 🌴 Jordan Edward 🌴</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
