@@ -1,4 +1,3 @@
-/* Reset & base styling */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +14,7 @@ body {
 
 header {
   text-align: center;
-  background-color: #006400; /* Dark green */
+  background-color: #006400; 
   color: white;
   padding: 1.5rem 1rem;
   margin-bottom: 1.5rem;
@@ -25,7 +24,7 @@ h1 {
   font-size: 2rem;
 }
 
-/* Main form container */
+
 main form {
   max-width: 600px;
   margin: 0 auto;
@@ -87,7 +86,7 @@ textarea {
   resize: vertical;
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   margin-top: 2rem;

@@ -1,4 +1,3 @@
-// Product array
 const products = [
   { id: "fc-1888", name: "Flux Capacitor" },
   { id: "fc-2050", name: "Power Laces" },
@@ -8,7 +7,6 @@ const products = [
   { id: "wr-2022", name: "Web-shooters" }
 ];
 
-// Populate select menu
 const productSelect = document.getElementById("productName");
 
 products.forEach(product => {
