@@ -1,0 +1,11 @@
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mountain Trails Explorer Logo">
+  <!-- Mountain shape -->
+  <polygon points="20,80 60,20 100,80" fill="#2a5d34"></polygon>
+  <polygon points="90,80 130,30 170,80" fill="#4c7a50"></polygon>
+  
+  <!-- Trail winding -->
+  <path d="M55 80 Q65 60 75 80 T95 80" stroke="#f0e6d2" stroke-width="4" fill="none" stroke-linecap="round"></path>
+  
+  <!-- Text -->
+  <text x="105" y="95" font-family="Georgia, serif" font-size="18" fill="#2a5d34">Mountain Trails Explorer</text>
+</svg>

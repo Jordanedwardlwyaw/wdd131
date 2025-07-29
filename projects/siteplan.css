@@ -1,0 +1,113 @@
+/* Color Schema */
+:root {
+  --primary-color: #2a5d34; /* dark green for headings */
+  --secondary-color: #f0e6d2; /* light beige background */
+  --accent-color: #d9534f; /* accent red for highlights */
+  --text-color: #333333;
+  --section-bg: #ffffff; /* white background for sections */
+  --section-border: #a3bfa1; /* light green border */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  margin: 1rem 2rem;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: Georgia, serif;
+}
+
+.logo {
+  width: 200px;      /* Adjust size as needed */
+  height: auto;
+  display: block;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+  font-family: 'Georgia', serif;
+}
+
+h1 {
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p, ul {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: disc inside;
+}
+
+/* Section styling */
+.section {
+  background-color: var(--section-bg);
+  border: 2px solid var(--section-border);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+/* Wireframe styling */
+.wireframe {
+  margin-top: 1rem;
+  border: 2px dashed var(--primary-color);
+  padding: 1rem;
+  font-family: monospace;
+  white-space: pre-wrap;
+  background-color: #fff;
+  color: var(--primary-color);
+  border-radius: 6px;
+}
+
+/* Color swatches in color schema */
+.color-swatch.primary {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.color-swatch.secondary {
+  color: var(--secondary-color);
+  background-color: #333;
+  padding: 0 0.25rem;
+  font-weight: bold;
+}
+
+.color-swatch.accent {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* Footer styling */
+footer p {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
