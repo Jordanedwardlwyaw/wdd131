@@ -1,11 +1,11 @@
-/* Color Schema */
+
 :root {
-  --primary-color: #2a5d34; /* dark green for headings */
-  --secondary-color: #f0e6d2; /* light beige background */
-  --accent-color: #d9534f; /* accent red for highlights */
+  --primary-color: #2a5d34; 
+  --secondary-color: #f0e6d2; 
+  --accent-color: #d9534f; 
   --text-color: #333333;
-  --section-bg: #ffffff; /* white background for sections */
-  --section-border: #a3bfa1; /* light green border */
+  --section-bg: #ffffff; 
+  --section-border: #a3bfa1; 
 }
 
 body {
@@ -33,7 +33,7 @@ header h1 {
 }
 
 .logo {
-  width: 200px;      /* Adjust size as needed */
+  width: 200px;      
   height: auto;
   display: block;
 }
@@ -65,7 +65,7 @@ ul {
   list-style: disc inside;
 }
 
-/* Section styling */
+
 .section {
   background-color: var(--section-bg);
   border: 2px solid var(--section-border);
@@ -75,7 +75,7 @@ ul {
   box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
 }
 
-/* Wireframe styling */
+
 .wireframe {
   margin-top: 1rem;
   border: 2px dashed var(--primary-color);
@@ -87,7 +87,7 @@ ul {
   border-radius: 6px;
 }
 
-/* Color swatches in color schema */
+
 .color-swatch.primary {
   color: var(--primary-color);
   font-weight: bold;
@@ -105,7 +105,7 @@ ul {
   font-weight: bold;
 }
 
-/* Footer styling */
+
 footer p {
   margin-top: 2rem;
   font-size: 0.9rem;
