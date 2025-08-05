@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Salt Lake Temple",
+    "location": "Salt Lake City, Utah, USA",
+    "country": "USA",
+    "image": "images/salt-lake-temple.jpg"
+  },
+  {
+    "name": "Nauvoo Illinois Temple",
+    "location": "Nauvoo, Illinois, USA",
+    "country": "USA",
+    "image": "images/nauvoo-temple.jpg"
+  },
+  {
+    "name": "Rome Italy Temple",
+    "location": "Rome, Italy",
+    "country": "Italy",
+    "image": "images/rome-temple.jpg"
+  }
+]
