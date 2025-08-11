@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Salt Lake Temple",
+    "location": "Salt Lake City, Utah, USA",
+    "country": "USA",
+    "dedicated": "1893",
+    "imageUrl": "images/salt-lake-temple.jpg"
+  },
+  {
+    "name": "Paris France Temple",
+    "location": "Le Chesnay, France",
+    "country": "France",
+    "dedicated": "2017",
+    "imageUrl": "images/paris-france-temple.jpg"
+  },
+  {
+    "name": "Accra Ghana Temple",
+    "location": "Accra, Ghana",
+    "country": "Ghana",
+    "dedicated": "2004",
+    "imageUrl": "images/accra-ghana-temple.jpg"
+  },
+  {
+    "name": "Rome Italy Temple",
+    "location": "Rome, Italy",
+    "country": "Italy",
+    "dedicated": "2019",
+    "imageUrl": "images/rome-italy-temple.jpg"
+  }
+]
