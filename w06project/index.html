@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kampala Travel Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Kampala</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#attractions">Attractions</a></li>
+        <li><a href="#tips">Travel Tips</a></li>
+        <li><a href="#contact">Contact</a></li> <!-- Added Contact -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Kampala</h2>
+      <img src="images/kampala_skyline.jpg" alt="Kampala Skyline" loading="lazy" />
+      <p>
+        Kampala, the capital city of Uganda, is vibrant, lively, and full of culture. From bustling markets to scenic hills, it’s a city that never fails to impress visitors.
+      </p>
+    </section>
+
+    <section id="attractions">
+      <h2>Top Attractions</h2>
+      <div class="gallery">
+        <article class="card">
+          <img src="images/gaddafi_mosque.jpg" alt="Gaddafi Mosque" loading="lazy" />
+          <h3>Gaddafi National Mosque</h3>
+          <p>A stunning mosque atop Kampala hill offering panoramic views.</p>
+        </article>
+        <article class="card">
+          <img src="images/uganda_museum.jpg" alt="Uganda Museum" loading="lazy" />
+          <h3>Uganda Museum</h3>
+          <p>Discover Uganda's rich cultural heritage and history.</p>
+        </article>
+        <article class="card">
+          <img src="images/ndere_centre.jpg" alt="Ndere Cultural Centre" loading="lazy" />
+          <h3>Ndere Cultural Centre</h3>
+          <p>Enjoy traditional music, dance, and crafts from Uganda.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>Travel Tips</h2>
+      <ul>
+        <li>Best time to visit: June–August & December–February.</li>
+        <li>Currency: Ugandan Shilling (UGX).</li>
+        <li>Local transport: Boda bodas (motorcycle taxis) and matatus (minibuses).</li>
+      </ul>
+    </section>
+
+    <!-- Added Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+
+      <div class="contact-info">
+        <h3>Our Contact Information</h3>
+        <p>Phone: +256 700 123456</p>
+        <p>Email: info@kampalatravelguide.ug</p>
+        <p>Address: 123 Kampala Road, Kampala, Uganda</p>
+      </div>
+
+      <form id="contactForm" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required minlength="2" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="formMessage" class="hidden"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kampala Travel Guide</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
